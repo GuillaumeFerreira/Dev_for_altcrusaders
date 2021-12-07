@@ -160,7 +160,7 @@
 
 
 
-    $("#sparkline-revenue3").sparkline([5, 3, 4, 6, 5, 7, 9, 4, 3, 5, 6, 1], {
+    $("#sparkline-revenue3").sparkline([5, 3, 4, 6, 5, 7, 9, 4, 3, 5, 16, 10], {
         type: 'line',
         width: '99.5%',
         height: '100',
@@ -225,7 +225,7 @@
     // Revenue By Categories
     // ============================================================== 
 
-    var chart = c3.generate({
+    /*var chart = c3.generate({
         bindto: "#c3chart_category",
         data: {
             columns: [
@@ -261,5 +261,5 @@
 
 
 
-    });
+    });*/
 
