@@ -20,7 +20,7 @@ const myChart = new Chart(ctx, {
             borderWidth: 1
         }]
     },
-    
+
     options: {
 
 
