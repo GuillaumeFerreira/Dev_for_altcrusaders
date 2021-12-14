@@ -14,4 +14,5 @@ document.getElementById("marketcap").innerHTML =num.toFixed(0);
 
 })
 
+
 //historique https://api.coingecko.com/api/v3/coins/altcrusaders/market_chart/range?vs_currency=usd&from=1637798400&to=1637884799
