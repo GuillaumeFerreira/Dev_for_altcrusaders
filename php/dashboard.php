@@ -36,34 +36,34 @@ $holders = substr($mystring, $pos-6, 5) ;
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="index.php">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="title">Statistics</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="roadmap.html">
                         <span class="icon"><ion-icon name="trail-sign-outline"></ion-icon></span>
                         <span class="title">Roadmap</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="https://github.com/GuillaumeFerreira/Dev_for_altcrusaders">
                         <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
                         <span class="title">Github</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="https://trello.com/b/2ThkNAcf/web-site-stat-altcrusaders">
                         <span class="icon"><ion-icon name="library-outline"></ion-icon></span>
                         <span class="title">Trello</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="https://altcrusaders.io/groups/development-for-altcrusaders/">
                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                         <span class="title">Join us</span>
                     </a>
@@ -118,15 +118,15 @@ $holders = substr($mystring, $pos-6, 5) ;
                 </div>
             </div>
 
-            <div class="details">
+             <div class="details">
 
 
                 <!-- transaction -->
-                <div class="recentOrders">
+               <!-- <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Recent Orders on PancakeSwap</h2>
-                        <!--<a href="#" class="btn">View All</a>-->
-                    </div>
+                        <h2>Recent Orders on PancakeSwap</h2> -->
+                       <!--<a href="#" class="btn">View All</a>-->
+                    <!--</div>
                     <table>
                         <thead>
                             <tr>
@@ -168,7 +168,7 @@ $holders = substr($mystring, $pos-6, 5) ;
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
                 <!-- Charts -->
                 <div class="graphBox">
 
@@ -205,5 +205,6 @@ $holders = substr($mystring, $pos-6, 5) ;
     </script>
     <script src="../javascript/coingeko.js"></script>
 <script src="../javascript/chart.js"></script>
+
 </body>
 </html>
