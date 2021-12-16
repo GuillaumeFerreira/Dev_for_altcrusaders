@@ -222,17 +222,16 @@ body
 {
     position: relative;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 30px;
     /*margin-top: 10px;*/
 }
 .details .recentOrders
 {
     position: relative;
-    display: grid;
-    min-height: 300px;
+
     background: var(--white);
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
@@ -255,7 +254,7 @@ body
 {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+
 }
 .details table thead td
 {
@@ -268,7 +267,6 @@ body
 }
 .details .recentOrders table tr:last-child
 {
-
     border-bottom: none;
 }
 .details .recentOrders table tbody tr:hover
@@ -306,20 +304,16 @@ body
 
 }
 
-/*.graphBox
+.graphBox
 {
     position: relative;
-    width: 100%;
+    margin-top: 10px
     padding: 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
-}*/
+    overflow-x: auto;
+}
 .graphBox .box
 {
     position: relative;
-
-    width: 100%;
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
     border-radius: 20px;
@@ -347,7 +341,11 @@ body
     }
     .cardBox
     {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box
+    {
+        overflow-x: auto;
     }
 }
 
@@ -355,17 +353,24 @@ body
 {
     .details
     {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr;
     }
     .recentOrders
     {
         overflow-x: auto;
     }
-
+    .box
+    {
+        overflow-x: auto;
+    }
+    .cardBox
+    {
+        grid-template-columns: 1fr;
+    }
 }
 @media (max-width: 480px)
 {
-    .cardBox .card
+    .cardBox
     {
         grid-template-columns: 1fr;
     }
@@ -394,5 +399,13 @@ body
         color: var(--white);
         right: 0;
         left: initial;
+    }
+    .details
+    {
+        grid-template-columns: 1fr;
+    }
+    .box
+    {
+        overflow-x: auto;
     }
 }

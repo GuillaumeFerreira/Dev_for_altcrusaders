@@ -1,3 +1,21 @@
+<?php
+require 'simplehtmldom/simple_html_dom.php';
+
+$mystring = file_get_html('https://altcrusaders.io/about/')->plaintext;
+$findme = "like-minded individuals and freely discuss your favorite topics or tokens without fear of censorship or commercial use of your data";
+$pos = strpos($mystring, $findme);
+
+$users = substr($mystring, $pos-5, 4);
+
+$mystring = file_get_html('https://bscscan.com/token/0x2456e44c617d6231bb06492fa7337ee2f552bf61')->plaintext;
+$findme = "addresses";
+$pos = strpos($mystring, $findme);
+
+$holders = substr($mystring, $pos-6, 5) ;
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,7 +100,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">0.008</div>
+                        <div class="number"><?php echo($holders) ;?></div>
                         <div class="cardName">Holders</div>
                     </div>
                     <div class="iconBx">
@@ -91,7 +109,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">Soon</div>
+                        <div class="number"><?php echo($users) ;?></div>
                         <div class="cardName">Users</div>
                     </div>
                     <div class="iconBx">
@@ -104,11 +122,11 @@
 
 
                 <!-- transaction -->
-               <!-- <div class="recentOrders">
+                <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Recent Orders on PancakeSwap</h2> -->
-                       <!--<a href="#" class="btn">View All</a>-->
-                    <!--</div>
+                        <h2>Recent Orders on PancakeSwap</h2>
+                        <!--<a href="#" class="btn">View All</a>-->
+                    </div>
                     <table>
                         <thead>
                             <tr>
@@ -150,7 +168,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div> -->
+                </div>
                 <!-- Charts -->
                 <div class="graphBox">
 
@@ -187,7 +205,5 @@
     </script>
     <script src="../javascript/coingeko.js"></script>
 <script src="../javascript/chart.js"></script>
-<script src="../javascript/bsc.js"></script>
-</body>
 </body>
 </html>
